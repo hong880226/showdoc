@@ -8,6 +8,7 @@ on:
 
 env:
   REGISTRY: registry.cn-hangzhou.aliyuncs.com
+  IMAGE_NAME: ${{ secrets.ALIYUN_NAMESPACE }}/${{ github.event.repository.name }}
 
 jobs:
   docker:
