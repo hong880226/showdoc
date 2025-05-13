@@ -26,4 +26,4 @@ jobs:
         password: ${{ secrets.ALIYUN_PASSWORD }}
     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag showdoc:$(date +%s)
+      run: docker build . --file Dockerfile --tag hong-images/showdoc:$(date +%s)
